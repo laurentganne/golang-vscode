@@ -21,5 +21,9 @@ RUN cd /root \
   && chown vscode:vscode /home/vscode/install-vscode-extension*.sh \
   && su - vscode -c /home/vscode/install-vscode-Go.sh
 
+COPY --chown=vscode:vscode user/terminator.config /home/vscode/.config/terminator/config
+COPY --chown=vscode:vscode user/bash_profile /home/vscode/.bash_profile
+
+
 WORKDIR /root
 CMD su - vscode -c "code -w ."

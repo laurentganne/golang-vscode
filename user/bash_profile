@@ -1,0 +1,4 @@
+export GOROOT=/usr/local/go
+export GOPATH=/home/vscode/go
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
