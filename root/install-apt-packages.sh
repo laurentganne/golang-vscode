@@ -13,6 +13,12 @@ apt-get install -y --no-install-recommends \
   libx11-xcb1 \
   libxss1 \
   dbus-x11 \
+  vim \
+  openjdk-8-jdk-headless \
+  maven \
+  python-sphinx \
+  python-yaml \
   terminator && \
 curl -o vscode-amd64.deb -L https://go.microsoft.com/fwlink/?LinkID=760868 && \
 dpkg -i vscode-amd64.deb
+
