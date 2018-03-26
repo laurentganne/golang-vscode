@@ -18,6 +18,9 @@ apt-get install -y --no-install-recommends \
   maven \
   python-sphinx \
   python-yaml \
+  texlive-latex-base \
+  texlive-fonts-recommended \
+  texlive-latex-extra \
   terminator && \
 curl -o vscode-amd64.deb -L https://go.microsoft.com/fwlink/?LinkID=760868 && \
 dpkg -i vscode-amd64.deb
