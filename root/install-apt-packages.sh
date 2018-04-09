@@ -2,6 +2,7 @@
 apt-get update &&  \
 apt-get install -y --no-install-recommends \
   unzip \
+  zip \
   libgtk2.0-0 \
   libgconf-2-4 \
   libnss3 \
