@@ -17,9 +17,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN cd /root \
   && ./install-apt-packages.sh \
   && useradd -m vscode -s /bin/bash \
-  && cp install-vscode-*.sh /home/vscode/ \
-  && chown vscode:vscode /home/vscode/install-vscode-extension*.sh \
-  && su - vscode -c /home/vscode/install-vscode-Go.sh
+  && mkdir -p /home/vscode/go \
+  && chown vscode:vscode /home/vscode/go
 
 COPY --chown=vscode:vscode user/terminator.config /home/vscode/.config/terminator/config
 COPY --chown=vscode:vscode user/bash_profile /home/vscode/.bash_profile
