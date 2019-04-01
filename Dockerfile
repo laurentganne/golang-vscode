@@ -18,7 +18,9 @@ RUN cd /root \
   && ./install-apt-packages.sh \
   && useradd -m vscode -s /bin/bash \
   && mkdir -p /home/vscode/go \
-  && chown vscode:vscode /home/vscode/go
+  && chown vscode:vscode /home/vscode/go \
+  && mkdir -p /home/vscode/dev \
+  && chown vscode:vscode /home/vscode/dev
 
 COPY --chown=vscode:vscode user/terminator.config /home/vscode/.config/terminator/config
 COPY --chown=vscode:vscode user/bash_profile /home/vscode/.bash_profile
