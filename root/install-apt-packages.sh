@@ -15,7 +15,7 @@ apt-get install -y --no-install-recommends \
   libxss1 \
   dbus-x11 \
   vim \
-  openjdk-8-jdk-headless \
+  openjdk-11-jdk-headless \
   maven \
   python-sphinx \
   python-yaml \
